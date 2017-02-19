@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Plugins Demo</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style>
+    h1, h2{ margin-top: 3rem;}
+
+    [class^="ads"] a {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        max-width:15rem;
+        width: 15rem;
+        margin: 1rem;
+        color: #999;
+    }
+
+    @media (min-width: 576px) and (max-width: 992px) {
+
+            .card-columns {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                -o-column-count: 2;
+                column-count: 2;
+            }
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>jQuery Plugins</h1>
+            <p>Demo Page</p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="cards">
+            <h2>Equalizer</h2>
+            <p class="small">Equal Height Elements</p>
+            <div class="card-columns" data-equalize>
+                <div class="card">
+                    <div class="card-block">
+                        <h4>Card Title</h4>
+                        <p class="card-text">Dolor ipsum dolor sit amet, praesentium blanditiis repellat praesentium. Doloribus odio fugit magni nulla, quas vero porro, perspiciatis nam dolorem ea.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h4>Card Title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, blanditiis repellat praesentium. Doloribus odio fugit magni nulla, quas vero porro, perspiciatis nam dolorem ea.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h4>Card Title</h4>
+                        <p class="card-text">Repellat praesentium. Doloribus odio fugit magni nulla, quas vero porro, perspiciatis nam dolorem ea.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h4>Card Title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, blanditiis repellat praesentium. Doloribus odio fugit magni nulla, quas vero porro, perspiciatis nam dolorem ea.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h4>Card Title</h4>
+                        <p class="card-text">Blanditiis repellat praesentium. Doloribus odio fugit magni nulla, quas vero porro, perspiciatis nam dolorem ea.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h4>Card Title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, deleniti. Dolor sed labore nam ex, blanditiis repellat praesentium. Doloribus odio fugit magni nulla, quas vero porro, perspiciatis nam dolorem ea.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section>
+            <h2>Limited Number of Characters</h2>
+            <p class="small">Display number of left chars while typing.</p>
+            <form>
+                    <label for="text1">Enter Text 1
+                        <textarea class="form-control" name="text1" id="text1" cols="40" rows="5"
+                                    maxlength="150" data-charslimit="#charsleft1"></textarea>
+                        <small class="form-text text-muted">Maximum number allowed, left:
+                            <span id="charsleft1"></span>
+                        </small>
+                    </label>
+
+                    <label for="text2">Enter Text 2
+                        <textarea class="form-control" name="text2" id="text2" cols="40" rows="5"
+                                    maxlength="10" data-charslimit="#charsleft2"></textarea>
+                        <small class="form-text text-muted">Maximum number allowed, left:
+                            <span id="charsleft2"></span>
+                        </small>
+                    </label>
+            </form>
+        </section>
+        <article>
+            <h2>Auto Figure Caption</h2>
+            <p class="small">Add <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> tags with attr-s as options, to images.</p>
+            <div class="row posts">
+                <div class="col-md-4 col-sm-6">
+                    <img src="http://placehold.it/300x150" alt="Nice kitten!" class="post-img img-thumbnail" title="Loremostrum voluptas quas nulla, tempora autem, voluptatem magnam.">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="http://placehold.it/300x150" alt="Nice kitten!" class="post-img img-thumbnail" title="Loremostrum voluptas quas nulla, tempora autem, voluptatem magnam.">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="http://placehold.it/300x150" alt="Nice kitten!" class="post-img img-thumbnail" title="Loremostrum voluptas quas nulla, tempora autem, voluptatem magnam.">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="http://placehold.it/300x150" alt="Nice kitten!" class="post-img img-thumbnail" title="Loremostrum voluptas quas nulla, tempora autem, voluptatem magnam.">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="http://placehold.it/300x150" alt="Nice kitten!" class="post-img img-thumbnail" title="Loremostrum voluptas quas nulla, tempora autem, voluptatem magnam.">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="http://placehold.it/300x150" alt="Nice kitten!" class="post-img img-thumbnail" title="Loremostrum voluptas quas nulla, tempora autem, voluptatem magnam.">
+                </div>
+            </div>
+        </article>
+    </main>
+    <aside class="container">
+
+            <h2>Ads 1</h2>
+            <p class="small">Display random ads on page load.</p>
+            <div class="ads-1 row"></div>
+            <h2>Ads 2</h2>
+            <p class="small">Display random ads on page load.</p>
+            <div class="ads-2 row"></div>
+
+    </aside>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="scripts/jquery-3.0.0.js"><\/script>');</script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+
+    <script src="scripts/jquery.equalize.js" charset="utf-8"></script>
+    <script src="scripts/jquery.inputlimitchars.js" charset="utf-8"></script>
+    <script src="scripts/jquery.addFigureCaption.js" charset="utf-8"></script>
+    <script src="scripts/jquery.adsRotator.js" charset="utf-8"></script>
+    <script>
+        $(document).ready(function(){
+
+            // equalize
+            $('[data-equalize] > *').equalize();
+
+
+            // add Figure Caption to images
+            $('.post-img').addFigureCaption({
+                figureAttrs: {
+                    class: 'figure',
+                    'data-x': '',
+                },
+                figcaptionAttrs: {
+                    class: 'figure-caption',
+                },
+            });
+
+
+            // Add ads 1
+            $('.ads-1').adsRotator({
+                adURLs: ['ads/ad-1.html', 'ads/ad-2.html', 'ads/ad-3.html',
+                        'ads/ad-4.html', 'ads/ad-5.html' ],
+                adDisplayNr: 2,
+                onAdLoaded: function( k, url, displayNr ){
+                    console.log('Display ad number – '+(k+1)+' from total of '+ displayNr);
+                }, // onAdLoaded()
+            });
+
+
+            // Add ads 2
+            $('.ads-2').adsRotator({
+                adDisplayNr: 3,
+                adURLs: function() {
+                    var ads = ['./ads/ad-1.html', 'ads/ad-2.html', 'ads/ad-3.html',
+                                'ads/ad-4.html', 'ads/ad-5.html' ];
+                    ads.reverse();
+                    return ads;
+                }, // adURLs()
+            });
+
+        });
+    </script>
+</body>
+</html>
